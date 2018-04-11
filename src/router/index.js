@@ -5,6 +5,7 @@ Vue.use(VueRouter);
 
 import Home from '../components/Home';
 import HelloWorld from '../components/HelloWorld';
+import WebAuth from '../components/WebAuth';
 
 const router = new VueRouter({
   pageRouting: true,
@@ -22,6 +23,13 @@ const router = new VueRouter({
       meta: {
         title: 'Hello World',
       },
+    },
+    {
+      path: '/webauth',
+      component: WebAuth,
+      meta: {
+        title: 'Login',
+      }
     },
     {path: '*', redirect: '/home'},
   ],

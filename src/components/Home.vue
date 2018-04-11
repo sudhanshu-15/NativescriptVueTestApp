@@ -7,13 +7,13 @@
       <!-- <Image src="res://img_institute_moto" stretch="none" horizontalAlignment="center" class="logo"/> -->
       <android>
         <StackLayout orietation="vertical" class="stack" id="buStack" :opacity="opacity">
-          <Button text="Login" horizontalAlignment="center" class="buttona" tap="goToWebAuthPage"/>
+          <Button text="Login" horizontalAlignment="center" class="buttona" @tap="$router.push('/webauth')"/>
           <Button text="Help" horizontalAlignment="center" class="buttona" tap="changeBg"/>
         </StackLayout>
       </android>
       <ios>
         <StackLayout orietation="vertical" class="stacki" id="buStack">
-          <Button text="Login" horizontalAlignment="center" class="buttoni" tap="goToWebAuthPage"/>
+          <Button text="Login" horizontalAlignment="center" class="buttoni" @tap="$router.push('/WebAuth')"/>
           <Button text="Help" horizontalAlignment="center" class="buttoni" tap="changeBg"/>
         </StackLayout>
       </ios>
@@ -32,6 +32,7 @@ export default {
   methods: {
     goToWebAuthPage() {
       console.log("Pressed")
+      $router.push('/webauth')
     },
     changeBg() {
       console.log("Change Bg")
