@@ -2,23 +2,21 @@
   <Page class="page">
     <ActionBar class="action-bar" title="Home"/>
 
-    <ScrollView  class="test" id="sViewe">
-    <StackLayout orietation= "veritcal">
+    <StackLayout orietation= "veritcal" class="test">
       <!-- <Image src="res://img_institute_moto" stretch="none" horizontalAlignment="center" class="logo"/> -->
       <android>
         <StackLayout orietation="vertical" class="stack" id="buStack" :opacity="opacity">
           <Button text="Login" horizontalAlignment="center" class="buttona" @tap="$router.push('/webauth')"/>
-          <Button text="Help" horizontalAlignment="center" class="buttona" tap="changeBg"/>
+          <Button text="Help" horizontalAlignment="center" class="buttona" @tap="changeBg"/>
         </StackLayout>
       </android>
       <ios>
         <StackLayout orietation="vertical" class="stacki" id="buStack">
-          <Button text="Login" horizontalAlignment="center" class="buttoni" @tap="$router.push('/WebAuth')"/>
-          <Button text="Help" horizontalAlignment="center" class="buttoni" tap="changeBg"/>
+          <Button text="Login" horizontalAlignment="center" class="buttoni" @tap="$router.push('/webauth')"/>
+          <Button text="Help" horizontalAlignment="center" class="buttoni" @tap="changeBg"/>
         </StackLayout>
       </ios>
     </StackLayout>
-  </ScrollView>
   </Page>
 </template>
 
