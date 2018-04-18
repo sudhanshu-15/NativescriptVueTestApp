@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "505814270328",
+    "firebase_url": "https://testvue-3854d.firebaseio.com",
+    "project_id": "testvue-3854d",
+    "storage_bucket": "testvue-3854d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:505814270328:android:eda150a2324a4d54",
+        "android_client_info": {
+          "package_name": "me.ssiddh.nsvue"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "505814270328-30mb8sghcrb1pva2t7ug2ggofntm4doi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgkg5rEaS5zfl5c21HKXuf7RWy5ZzTRRg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
