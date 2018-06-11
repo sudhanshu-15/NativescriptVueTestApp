@@ -96,8 +96,9 @@ export default {
       },
 
       getFirebaseToken() {
-          firebase.getCurrentPushToken((token) => {
-              console.log("Device Token: " + token)
+          console.log("Token Call")
+          firebase.getCurrentPushToken().then((token) => {
+              console.log("Token " + token)
           })
       },
 
@@ -108,8 +109,8 @@ export default {
         .then(data => {
             console.log("IdNumber: " + data.AuthProcess.idnumber)
             console.log("SessionKey: " + data.AuthProcess.sessionKey)
+            this.getFirebaseToken()
         })
-        .then(this.getFirebaseToken())
       }
   },
   data() {
